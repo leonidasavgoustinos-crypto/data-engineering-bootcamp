@@ -7,8 +7,7 @@ This repository contains the completed data engineering bootcamp assignments for
 - **`data/raw/`**: Contains sample JSON datasets (customers, products, orders) to simulate the operational source systems.
 - **`notebooks_original/`**: The original assignment Jupyter notebooks (`.ipynb`) with the unfilled exercises.
 - **`notebooks_final/`**: The completed, highly educational Databricks notebooks. These include step-by-step instructor explanations in Markdown and all TODOs resolved.
-- **`solutions_breakdown/`**: Analytical Markdown documents explaining every single TODO in detail (What was missing, what was added, and the deep theory behind it).
-- **`src/`**: The completed, production-ready Python scripts that solve the assignments and execute the pipelines locally.
+
 
 ## The Pipelines (src/)
 
@@ -33,22 +32,11 @@ An advanced modeling technique to decouple entities:
 
 ## How to Run
 
-### Option 1: On Databricks (Recommended)
+### On Databricks (Recommended)
 You do **not** need to install any libraries. Databricks natively supports PySpark and Delta Lake out of the box. 
 Simply import the notebooks from the `notebooks_final/` folder into your Databricks workspace and run them cell-by-cell.
 
-### Option 2: Locally (via Python Scripts)
-If you want to run the provided `.py` scripts locally on your machine, you must have Apache Spark and Delta Lake installed in your Python environment:
-```bash
-pip install pyspark delta-spark
-```
 
-Run the scripts directly from the root of the project:
-```bash
-python src/01_medallion_pipeline_solved.py
-python src/02_scd_complete_framework_solved.py
-python src/03_data_vault_modeling_solved.py
-```
 
 ## Developer Notes
 All missing logic (TODOs) from the original internal bootcamp have been resolved. The code utilizes PySpark DataFrame transformations (`withColumn`, `explode`, `sha2`, `concat_ws`) and Delta Lake API (`merge`, `whenMatchedUpdate`, `whenNotMatchedInsert`).
