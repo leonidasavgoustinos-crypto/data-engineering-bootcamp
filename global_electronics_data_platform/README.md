@@ -9,7 +9,6 @@ This repository contains the completed data engineering bootcamp assignments for
 - **`notebooks_final/`**: The completed, highly educational Databricks notebooks. These include step-by-step instructor explanations in Markdown and all TODOs resolved.
 - **`solutions_breakdown/`**: Analytical Markdown documents explaining every single TODO in detail (What was missing, what was added, and the deep theory behind it).
 - **`src/`**: The completed, production-ready Python scripts that solve the assignments and execute the pipelines locally.
-- **`spark-warehouse/`**: (Auto-generated) Local storage directory where Delta tables are saved during script execution.
 
 ## The Pipelines (src/)
 
@@ -32,9 +31,14 @@ An advanced modeling technique to decouple entities:
 - **Satellites:** Hold mutable contextual attributes with load timestamps.
 - **Links:** Map many-to-many relationships (e.g., Orders -> Customers -> Products) with structural hash keys.
 
-## How to Run Locally
+## How to Run
 
-You must have Apache Spark and Delta Lake installed in your Python environment.
+### Option 1: On Databricks (Recommended)
+You do **not** need to install any libraries. Databricks natively supports PySpark and Delta Lake out of the box. 
+Simply import the notebooks from the `notebooks_final/` folder into your Databricks workspace and run them cell-by-cell.
+
+### Option 2: Locally (via Python Scripts)
+If you want to run the provided `.py` scripts locally on your machine, you must have Apache Spark and Delta Lake installed in your Python environment:
 ```bash
 pip install pyspark delta-spark
 ```
