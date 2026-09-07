@@ -1,0 +1,9 @@
+{"customer_id":101.0,"items":[{"product_id":"P001","quantity":1},{"product_id":"P003","quantity":2}],"order_date":"2026-06-01T00:00:00.000Z","order_id":201}
+{"customer_id":102.0,"items":[{"product_id":"P002","quantity":1}],"order_date":"2026-06-02T00:00:00.000Z","order_id":202}
+{"customer_id":102.0,"items":[{"product_id":"P002","quantity":1}],"order_date":"2026-06-02T00:00:00.000Z","order_id":202}
+{"customer_id":103.0,"items":[{"product_id":"P005","quantity":1},{"product_id":"P006","quantity":1}],"order_date":"2026-06-02T00:00:00.000Z","order_id":203}
+{"customer_id":104.0,"items":[{"product_id":"P004","quantity":1},{"product_id":"P007","quantity":1}],"order_date":null,"order_id":204}
+{"customer_id":105.0,"items":[{"product_id":"P001","quantity":1}],"order_date":"2026-06-03T00:00:00.000Z","order_id":205}
+{"customer_id":null,"items":[{"product_id":"P008","quantity":3}],"order_date":"2026-06-03T00:00:00.000Z","order_id":206}
+{"customer_id":106.0,"items":[{"product_id":"P002","quantity":1},{"product_id":"P003","quantity":1},{"product_id":"P007","quantity":2}],"order_date":"2026-06-04T00:00:00.000Z","order_id":207}
+{"customer_id":107.0,"items":[{"product_id":"P006","quantity":1}],"order_date":"2026-06-04T00:00:00.000Z","order_id":208}
